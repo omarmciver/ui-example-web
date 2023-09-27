@@ -1,0 +1,19 @@
+version: "3"
+services:
+  ui-example-web:
+    hostname: ui-example-web
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      PORT: 3000
+      NEXT_TELEMETRY_DISABLED: 1
+    ports:
+      - "3000:3000"
+  nginx-ingress-router:
+    hostname: nginx-path-router
+    build:
+      context: ./nginx-path-router
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"

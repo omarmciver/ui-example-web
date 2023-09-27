@@ -1,0 +1,6 @@
+.dockerignore
+.next
+.yarn
+.devcontainer
+node_modules
+Dockerfile

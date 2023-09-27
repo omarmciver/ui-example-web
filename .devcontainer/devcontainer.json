@@ -1,0 +1,16 @@
+// See https://aka.ms/vscode-remote/devcontainer.json
+{
+  "name": "Web UI Example",
+  "service": "ui-example-web",
+  "containerUser": "node",
+  "remoteUser": "node",
+  "workspaceFolder": "/code/",
+  "dockerComposeFile": "docker-compose.yml",
+  "mounts": [
+    {
+      "source": "..",
+      "target": "/code/",
+      "type": "bind"
+    }
+  ]
+}
