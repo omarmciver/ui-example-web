@@ -13,7 +13,7 @@ Open this project with VSCode Devcontainers.
 
 Via NGINX: http://localhost:3001/next/things/this-is-a-test-id/ ✅
 
-Direct to nextjs: http://localhost:3001/next/things/this-is-a-test-id/ ✅
+Direct to nextjs: http://localhost:3000/next/things/this-is-a-test-id/ ✅
 
 ### Loading chunk error
 
@@ -31,4 +31,4 @@ Remove `use client;` from `app\things\[thingId]\page.tsx`
 
 Via NGINX: http://localhost:3001/next/things/this-is-a-test-id/ ✅
 
-Direct to nextjs: http://localhost:3001/next/things/this-is-a-test-id/ ✅
+Direct to nextjs: http://localhost:3000/next/things/this-is-a-test-id/ ✅
