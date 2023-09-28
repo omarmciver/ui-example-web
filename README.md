@@ -11,18 +11,24 @@ Open this project with VSCode Devcontainers.
 
 `yarn dev` 
 
-Visit http://localhost:3001/next/things/this-is-a-test-id/
+Via NGINX: http://localhost:3001/next/things/this-is-a-test-id/ ✅
 
-### Doesn't work (Loading chunk error)
+Direct to nextjs: http://localhost:3001/next/things/this-is-a-test-id/ ✅
+
+### Loading chunk error
 
 `yarn build && yarn start` (or `yarn host`)
 
-Visit http://localhost:3001/next/things/this-is-a-test-id/
+Via NGINX: http://localhost:3001/next/things/this-is-a-test-id/ ❌
 
-### Work (remove use client)
+Direct to nextjs: http://localhost:3000/next/things/this-is-a-test-id/ ✅
+
+### This works! (remove use client)
 
 Remove `use client;` from `app\things\[thingId]\page.tsx`
 
 `yarn build && yarn start` (or `yarn host`)
 
-Visit http://localhost:3001/next/things/this-is-a-test-id/
+Via NGINX: http://localhost:3001/next/things/this-is-a-test-id/ ✅
+
+Direct to nextjs: http://localhost:3001/next/things/this-is-a-test-id/ ✅
